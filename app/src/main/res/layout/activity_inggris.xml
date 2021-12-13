@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".inggris">
+
+    <TextView
+        android:id="@+id/txt_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="BIG-BEN"
+        android:textColor="@color/white"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/eiffel"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/bigben"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_big" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:shadowColor="#6E4343"
+        android:text="Big Ben adalah nama yang merujuk pada sebuah menara jam yang terletak di Gedung Parlemen di Westminster, London, Inggris. Jam ini terletak di timur laut dari Rumah Parlemen di Westminster, London. Menara ini tingginya 96.3 meter (316 kaki) dan dibangun dengan gaya Gothik Victoria. Menara ini dibangun di atas tanah berukuran 15 meter kali 15 meter, fondasi terbuat dari beton setebal 3 meter (9 kaki), pada kedalaman 4 meter (13 kaki) di bawah permukaan."
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eiffel" />
+
+    <Button
+        android:id="@+id/btn_inggris"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="NEXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

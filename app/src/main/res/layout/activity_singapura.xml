@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".singapura">
+
+    <TextView
+        android:id="@+id/txt_merlion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="PATUNG MERLION"
+        android:textColor="@color/white"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/merlion1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/merlion"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_merlion" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:shadowColor="#6E4343"
+        android:text="Merlion atau Singa laut adalah patung yang berkepala singa dengan badan seperti ikan. Namanya merupakan gabungan dari ikan duyung dan singa. Merlion dirancang oleh Fraser Brunner untuk Badan Pariwisata Singapura (STB) pada 1964 dan dipergunakan sebagai logonya hingga 1997. Perdana Menteri saat itu, Lee Kuan Yew meresmikan upacara pemasangan Merlion di Singapura pada 15 September 1972."
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/merlion1" />
+
+    <Button
+        android:id="@+id/btn_singapura"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="NEXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

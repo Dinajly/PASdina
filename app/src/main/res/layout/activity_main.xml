@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="ICON NEGARA"
+        android:textColor="@color/white"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/bigben"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/bigben"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/merlion"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="56dp"
+        android:text="Big Ben, Inggris"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bigben" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/colosseum"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/colosseum"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/eiffel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:text="Colosseum, Italia"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colosseum" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:text="Patung Merlion, Singapura"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/merlion" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/eiffel"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/eiffel"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/colosseum"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="32dp"
+        android:text="Menara Eiffel, Perancis"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eiffel" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/merlion"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/merlion"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/bigben"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
